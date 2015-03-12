@@ -22,8 +22,8 @@ app.use(methodOverride('X-HTTP-Method-Override')); // override with the X-HTTP-M
 app.use(express.static(__dirname + '/public')); // set the static files location /public/img will be /img for users
 
 // routes ==================================================
-app.get('/api/test', function(req, res) {
-	console.log('API is functional, bro.');
+app.get('/api/sample', function(req, res) {
+	res.send('Sample response from the backend!');
 });
 
 app.get('*', function(req, res) {
@@ -32,5 +32,5 @@ app.get('*', function(req, res) {
 
 // start app ===============================================
 app.listen(port);	
-console.log('Magic happens on port ' + port + '.'); 	// shoutout to the user
-exports = module.exports = app; 						// expose app
+console.log('Listening on port ' + port + '...'); 	// shoutout to the user
+module.exports = app; 					            // expose app

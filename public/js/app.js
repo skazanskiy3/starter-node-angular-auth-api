@@ -1,4 +1,4 @@
-angular.module('sampleApp', ['ngRoute', 'MainModule', 'NerdModule', 'GeekModule'])
+angular.module('sampleApp', ['ngRoute', 'HomeModule', 'SampleModule'])
 .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
 	$routeProvider
@@ -6,17 +6,12 @@ angular.module('sampleApp', ['ngRoute', 'MainModule', 'NerdModule', 'GeekModule'
 		// home page
 		.when('/', {
 			templateUrl: 'views/home.html',
-			controller: 'MainController'
+			controller: 'HomeController'
 		})
 
-		.when('/nerds', {
-			templateUrl: 'views/nerd.html',
-			controller: 'NerdController'
-		})
-
-		.when('/geeks', {
-			templateUrl: 'views/geek.html',
-			controller: 'GeekController'	
+		.when('/sample', {
+			templateUrl: 'views/sample.html',
+			controller: 'SampleController'	
 		})
 
 		.otherwise({
