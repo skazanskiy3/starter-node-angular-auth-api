@@ -1,4 +1,4 @@
-angular.module('sampleApp', ['ngRoute', 'NerdModule', 'GeekModule'])
+angular.module('sampleApp', ['ngRoute', 'MainModule', 'NerdModule', 'GeekModule'])
 .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
 	$routeProvider
@@ -17,6 +17,10 @@ angular.module('sampleApp', ['ngRoute', 'NerdModule', 'GeekModule'])
 		.when('/geeks', {
 			templateUrl: 'views/geek.html',
 			controller: 'GeekController'	
+		})
+
+		.otherwise({
+			redirectTo: '/'
 		});
 
 		$locationProvider.html5Mode(true);
