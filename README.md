@@ -12,4 +12,4 @@ This is a repo for a starter appliation for a Single Page MEAN Stack application
 Use this starter kit to build any MEAN stack application you like.
 
 ## Deploying to Heroku
-To deploy to Heroku, follow Heroku instructions as is, but a change needs to be made to **.gitignore**. Remove *public/libs*! 
+To deploy to Heroku, follow Heroku instructions as is, already edited the **.gitignore** file. 
