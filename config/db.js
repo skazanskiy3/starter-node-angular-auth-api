@@ -1,3 +1,4 @@
 module.exports = {
-	url : 'mongodb://<user>:<pass>@mongo.onmodulus.net:27017/uw45mypu'
+	secret : 'nYyVjG62ihrJHqS8vc4DZbQrRzuqZr',
+	url : 'mongodb://skazanskiy:Budweiser1868@ds135577.mlab.com:35577/app-sandbox'
 }
